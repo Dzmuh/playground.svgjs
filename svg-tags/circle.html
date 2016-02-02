@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>circle</title>
+    <meta charset="utf-8" />
+    <link href="bower_components/bulma/css/bulma.css" rel="stylesheet" />
+    <link href="bower_components/typeplate-starter-kit/css/typeplate.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div class="columns">
+            <section class="column">
+                <h2>SVG</h2>
+                <svg width="50" height="50" style="background:gray;">
+                    <circle cx="25" cy="10" r="10" fill="blue" stroke="white" stroke-width="4" />
+                </svg>
+            </section>
+            <section class="column">
+                <h2>SVG.js</h2>
+                <div id="drawing"></div>
+            </section>
+        </div>
+    </div>
+    <script src="bower_components/svg.js/dist/svg.js"></script>
+    <script src="circle.js"></script>
+</body>
+</html>

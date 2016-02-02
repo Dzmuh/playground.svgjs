@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>g</title>
+    <meta charset="utf-8" />
+    <link href="bower_components/bulma/css/bulma.css" rel="stylesheet" />
+    <link href="bower_components/typeplate-starter-kit/css/typeplate.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div class="columns">
+            <div class="column">
+                <h2>SVG</h2>
+                <svg width="500" height="500" style="background:gray;">
+                    <g id="whiskers">
+                        <line x1="75" y1="95" x2="135" y2="85" style="stroke: black;" />
+                        <line x1="75" y1="95" x2="135" y2="105" style="stroke: black;" />
+                    </g>
+                    <use xlink:href="#whiskers" transform="scale(-1,1) translate(-100, 0)" />
+                    <use xlink:href="#whiskers" transform="scale(-1,1) translate(-140, 0)" />
+                </svg>
+            </div>
+            <div class="column">
+                <h2>SVG.js</h2>
+                <div id="drawing"></div>
+            </div>
+        </div>
+    </div>
+    <script src="bower_components/svg.js/dist/svg.js"></script>
+</body>
+</html>
