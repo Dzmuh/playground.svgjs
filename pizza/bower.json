@@ -1,0 +1,6 @@
+{
+  "name": "myproject",
+  "dependencies": {
+    "svg.js": "^2.2.5"
+  }
+}
