@@ -1,4 +1,4 @@
-Песочница SVG.js
+п»їРџРµСЃРѕС‡РЅРёС†Р° SVG.js
 ================
 
-Песочница [SVG.js](http://svgjs.com/) ([GitHub](https://github.com/wout/svg.js))
+РџРµСЃРѕС‡РЅРёС†Р° [SVG.js](http://svgjs.com/) ([GitHub](https://github.com/wout/svg.js))

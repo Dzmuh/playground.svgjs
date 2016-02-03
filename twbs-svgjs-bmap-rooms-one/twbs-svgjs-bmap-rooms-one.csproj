@@ -34,7 +34,17 @@
     <Content Include="bower_components\jquery\dist\jquery.min.js" />
     <Content Include="bower_components\svg.js\dist\svg.js" />
     <Content Include="bower_components\svg.js\dist\svg.min.js" />
+    <Content Include="css\.gitignore" />
+    <Content Include="css\plan.css" />
+    <Content Include="css\plan.min.css">
+      <DependentUpon>plan.css</DependentUpon>
+    </Content>
     <Content Include="index.html" />
+    <Content Include="js\.gitignore" />
+    <Content Include="js\plan.js" />
+    <Content Include="js\plan.js.map">
+      <DependentUpon>plan.js</DependentUpon>
+    </Content>
     <Content Include="web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -50,6 +60,11 @@
     <Content Include="bower_components\bootstrap\dist\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="bower_components\bootstrap\dist\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="bower_components\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="styles\plan.scss" />
+    <None Include="compilerconfig.json" />
+    <None Include="compilerconfig.json.defaults">
+      <DependentUpon>compilerconfig.json</DependentUpon>
+    </None>
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
@@ -58,6 +73,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="scripts\plan.ts" />
     <TypeScriptCompile Include="typings\svgjs\svgjs.d.ts" />
   </ItemGroup>
   <ItemGroup>
@@ -90,8 +106,19 @@
     </VisualStudio>
   </ProjectExtensions>
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
-    <TypeScriptRemoveComments>false</TypeScriptRemoveComments>
+    <TypeScriptRemoveComments>True</TypeScriptRemoveComments>
     <TypeScriptSourceMap>true</TypeScriptSourceMap>
+    <TypeScriptTarget>ES5</TypeScriptTarget>
+    <TypeScriptJSXEmit>None</TypeScriptJSXEmit>
+    <TypeScriptCompileOnSaveEnabled>True</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptNoImplicitAny>False</TypeScriptNoImplicitAny>
+    <TypeScriptModuleKind>None</TypeScriptModuleKind>
+    <TypeScriptOutFile />
+    <TypeScriptOutDir>js</TypeScriptOutDir>
+    <TypeScriptGeneratesDeclarations>False</TypeScriptGeneratesDeclarations>
+    <TypeScriptNoEmitOnError>True</TypeScriptNoEmitOnError>
+    <TypeScriptMapRoot />
+    <TypeScriptSourceRoot>scripts</TypeScriptSourceRoot>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Release'">
     <TypeScriptRemoveComments>true</TypeScriptRemoveComments>
