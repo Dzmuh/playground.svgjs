@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>move</title>
+    <meta charset="utf-8" />
+    <style>
+        #target {
+            fill: aliceblue;
+            stroke: steelblue;
+            stroke-width: 6;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Кликни по штучке и она будет двигаться!</p>
+        <svg id="viz" width="300" height="300">
+            <circle id="target" cx="100" cy="100" r="25" />
+        </svg>
+    </div>
+    <script type="text/javascript">
+        var $, max, min, move, rightward;
+
+        $ = function (id) {
+            return document.getElementById(id);
+        };
+
+        rightward = true;
+
+        max = 200;
+
+        min = 100;
+
+        move = function () {
+            var x;
+            x = this.cx.baseVal;
+            if (rightward) {
+                if (x.value < max) {
+                    return x.value += 10;
+                } else {
+                    return rightward = false;
+                }
+            } else {
+                if (x.value > min) {
+                    return x.value -= 10;
+                } else {
+                    return rightward = true;
+                }
+            }
+        };
+
+        $('target').addEventListener("click", move, false);
+    </script>
+</body>
+</html>

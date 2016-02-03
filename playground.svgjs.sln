@@ -14,6 +14,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pizza", "pizza\pizza.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "svg-tags", "svg-tags\svg-tags.csproj", "{71341EA1-72A4-4BFF-8F63-609770219607}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "svg-events", "svg-events\svg-events.csproj", "{51208190-03C7-4CBD-B218-3265F6510EB1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,6 +30,10 @@ Global
 		{71341EA1-72A4-4BFF-8F63-609770219607}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71341EA1-72A4-4BFF-8F63-609770219607}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{71341EA1-72A4-4BFF-8F63-609770219607}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51208190-03C7-4CBD-B218-3265F6510EB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51208190-03C7-4CBD-B218-3265F6510EB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51208190-03C7-4CBD-B218-3265F6510EB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51208190-03C7-4CBD-B218-3265F6510EB1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

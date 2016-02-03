@@ -1,0 +1,8 @@
+{
+  "name": "myproject",
+  "dependencies": {
+    "typeplate-starter-kit": "^2.1.0",
+    "bulma": "^0.0.10",
+    "svg.js": "^2.2.5"
+  }
+}

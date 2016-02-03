@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>resize</title>
+    <meta charset="utf-8" />
+    <style>
+        #target {
+            fill: aliceblue;
+            stroke: steelblue;
+            stroke-width: 6;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Кликай по штучке и она будет увеличиваться и уменьшаться.</p>
+        <svg id="viz" width="300" height="300">
+            <circle id="target" cx="100" cy="100" r="25" />
+        </svg>
+    </div>
+    <script type="text/javascript">
+        var $, growing, max, min, resize;
+
+        $ = function (id) {
+            return document.getElementById(id);
+        };
+
+        growing = true;
+
+        max = 90;
+
+        min = 25;
+
+        resize = function () {
+            var r;
+            r = this.r.baseVal;
+            if (growing) {
+                if (r.value < max) {
+                    return r.value += 10;
+                } else {
+                    return growing = false;
+                }
+            } else {
+                if (r.value > min) {
+                    return r.value -= 10;
+                } else {
+                    return growing = true;
+                }
+            }
+        };
+
+        $('target').addEventListener("click", resize, false);
+    </script>
+</body>
+</html>
