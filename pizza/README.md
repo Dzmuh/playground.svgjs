@@ -1,9 +1,9 @@
-Пицца на SVG.js
+п»їРџРёС†С†Р° РЅР° SVG.js
 ===============
 
-По мотивам [JavaScript Pizza by Cassidy Williams](https://github.com/cassidoo/javascript-pizza)
+РџРѕ РјРѕС‚РёРІР°Рј [JavaScript Pizza by Cassidy Williams](https://github.com/cassidoo/javascript-pizza)
 
-Что надо:
+Р§С‚Рѕ РЅР°РґРѕ:
 
 ```
 npm install bower -g
@@ -11,9 +11,9 @@ npm install typescript -g
 npm install tsd -g
 ```
 
-А ещё Visual Studio 2015, желательно.
+Рђ РµС‰С‘ Visual Studio 2015, Р¶РµР»Р°С‚РµР»СЊРЅРѕ.
 
-Собираем:
+РЎРѕР±РёСЂР°РµРј:
 
 ```
 bower install

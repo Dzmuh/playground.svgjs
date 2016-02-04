@@ -1,7 +1,7 @@
-SVG.js и SVG-теги
+п»їSVG.js Рё SVG-С‚РµРіРё
 =================
 
-Что надо:
+Р§С‚Рѕ РЅР°РґРѕ:
 
 ```
 npm install bower -g
@@ -9,9 +9,9 @@ npm install typescript -g
 npm install tsd -g
 ```
 
-А ещё Visual Studio 2015, желательно.
+Рђ РµС‰С‘ Visual Studio 2015, Р¶РµР»Р°С‚РµР»СЊРЅРѕ.
 
-Собираем:
+РЎРѕР±РёСЂР°РµРј:
 
 ```
 bower install
