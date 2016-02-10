@@ -16,6 +16,18 @@ $floor-default-color: #ffffff;
         }
     }
 
+    .svg-button {
+        fill: #c9f8cb;
+        stroke: lighten($stroke-default-color, 66.5%);
+        stroke-width: $stroke-default-width;
+
+       &:hover {
+           stroke: $stroke-default-color;
+           stroke-width: $stroke-default-width / 2;
+           cursor: pointer;
+        }
+    }
+
     .floor {
         fill: $floor-default-color;
     }
